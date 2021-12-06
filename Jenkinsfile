@@ -1,19 +1,11 @@
-@Library('jenkins-pipelines')_
-
 pipeline {
     agent any
 
     stages {
         stage("Testing") {
             steps {
-                sh 'ls -a'
+                echo "hi"
             }
-        }
-    }
-
-    post {
-        always {
-            cleanWs()
         }
     }
 }
